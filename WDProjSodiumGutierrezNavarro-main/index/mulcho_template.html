@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <!-- You can link a CSS file here if you create one: -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Simple Quiz Question</h1>
+        
+        <!-- The Question -->
+        <p id="question">What is the capital of France?</p>
+        
+        <!-- The Options (Radio buttons) -->
+        <form id="quiz-form">
+            <label>
+                <input type="radio" name="answer" value="a">
+                Paris
+            </label><br>
+            <label>
+                <input type="radio" name="answer" value="b">
+                London
+            </label><br>
+            <label>
+                <input type="radio" name="answer" value="c">
+                Rome
+            </label><br>
+            <label>
+                <input type="radio" name="answer" value="d">
+                Berlin
+            </label><br>
+        </form>
+        
+        <!-- Submit Button -->
+        <button onclick="checkAnswer()">Submit Answer</button>
+        
+        <!-- Feedback Area -->
+        <p id="feedback"></p>
+    </div>
+
+    <!-- Link the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
